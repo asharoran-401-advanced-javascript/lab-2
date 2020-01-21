@@ -6,8 +6,8 @@ Project Name
 ## Auther: As'har Oran
 
 ## Links and Resources
-* [PR] : (https://github.com/asharoran-401-advanced-javascript/lab-02/pull/1)
-* [ci/cd] : (https://github.com/asharoran-401-advanced-javascript/lab-02/actions)
+* [PR] : (https://github.com/asharoran-401-advanced-javascript/lab-2/pull/1)
+* [ci/cd] : (https://github.com/asharoran-401-advanced-javascript/lab-2/actions)
 
 
 
