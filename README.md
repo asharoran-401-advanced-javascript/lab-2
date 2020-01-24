@@ -6,8 +6,9 @@ Project Name
 ## Auther: As'har Oran
 
 ## Links and Resources
-* [PR] : (https://github.com/asharoran-401-advanced-javascript/lab-2/pull/1)
-* [ci/cd] : (https://github.com/asharoran-401-advanced-javascript/lab-2/actions)
+* (PR) : [https://github.com/asharoran-401-advanced-javascript/lab-2/pull/1]
+* (repo) : [https://github.com/asharoran-401-advanced-javascript/lab-2]
+* (ci/cd) : [https://github.com/asharoran-401-advanced-javascript/lab-2/actions]
 
 
 
@@ -18,5 +19,6 @@ Project Name
 * nodemon
 ## Tests
 * npm test 
+* npm run test 
 ## UML
- Link to an image of the UML for your application and response to events
+image : []
