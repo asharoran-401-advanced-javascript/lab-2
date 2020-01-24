@@ -1,7 +1,7 @@
 // eslint-disable-next-line strict
 'use strict';
 
-const VehicleConstructor = require('../vehicle-constructor.js');
+const VehicleConstructor = require('../lib/vehicle-constructor.js');
 
 let types = ['Constructor'];
 

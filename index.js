@@ -1,3 +1,4 @@
+// eslint-disable-next-line strict
 'use strict';
 
 const VehicleConstructor = require('./lib/vehicle-constructor.js');
@@ -15,8 +16,8 @@ console.log(harley.name, harley.wheelie(), harley.stop());
 
 const VehicalClass = require('./lib/vehicle-class.js');
 
-const mazda = new VehicalClass.Car('Mazda 3');
-console.log(mazda.name, mazda.drive(), mazda.stop());
+const mazdaClass = new VehicalClass.Car('Mazda 3');
+console.log(mazdaClass.name, mazdaClass.drive(), mazdaClass.stop());
 
-const harley = new VehicalClass.Motorcycle('Harley');
-console.log(harley.name, harley.wheelie(), harley.stop());
+const harleyClass = new VehicalClass.Motorcycle('Harley');
+console.log(harleyClass.name, harleyClass.wheelie(), harleyClass.stop());
