@@ -21,4 +21,4 @@ Project Name
 * npm test 
 * npm run test 
 ## UML
-image : []
+image : [https://github.com/asharoran-401-advanced-javascript/lab-2/blob/lab-2/assets/lab2%20validator.jpg]
