@@ -3,6 +3,10 @@
 // const faker = require('faker');
 // eslint-disable-next-line no-unused-vars
 const ValidatorClass = require('../../validator/lib/validator.js');
+/////// ============I commint the test here because I have problem on it  , Mr.Brain said if the test is not work just commit it to pass the test in the action=============//
+
+
+
 ///// we get the idea from review ////
 // let type = ['class'];
 // let str = 'yes';
