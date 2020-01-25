@@ -13,7 +13,7 @@ class Validator{
     return typeof input === 'number';
   }
   isArray(input){
-    return Array.isArray(input) && ( valueType ? input.every( val => typeof val === valueType ) : true);
+    return Array.isArray(input) ;
   }
   isObject(input){
     return typeof input === 'object';

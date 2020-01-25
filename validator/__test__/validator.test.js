@@ -7,83 +7,75 @@ const ValidatorClass = require('../../validator/lib/validator.js');
 
 
 
-///// we get the idea from review ////
+/// we get the idea from review ////
 // let type = ['class'];
-// let str = 'yes';
-// let num = 1;
-// let arr = ['a'];
-// let obj = { x: 'y' };
-// // eslint-disable-next-line no-empty-function
-// let func = () =>{};
-// let bool = false;
+let str = 'yes';
+let num = 1;
+let arr = ['a'];
+let obj = { x: 'y' };
+// eslint-disable-next-line no-empty-function
+let func = () =>{};
+let bool = false;
 
 
-// describe('validator module performs basic validation of', () => {
-//   function getValidator(type) {
-//     switch (type) {
-//     case 'class':
-//       return new ValidatorClass.Validator('foo');
-//     default:
-//       return {};
-//     }
-//   }
-//   let validator = getValidator(type);
-//   /// we need to check the data if it string then give the string argumint truth and the other varible is false
-//   it(' allow strings', () => {
-//     expect(validator.isString(str)).toBeTruthy();
-//     expect(validator.isString(num)).toBeFalsy();
-//     expect(validator.isString(arr)).toBeFalsy();
-//     expect(validator.isString(obj)).toBeFalsy();
-//     expect(validator.isString(func)).toBeFalsy();
-//     expect(validator.isString(bool)).toBeFalsy();
-//   });
-//   /// we need to check the data if it number then give the number argumint truth and the other varible is false
-//   it(' allow numbers', () => {
-//     expect(validator.isNumber(str)).toBeFalsy();
-//     expect(validator.isNumber(num)).toBeTruthy();
-//     expect(validator.isNumber(arr)).toBeFalsy();
-//     expect(validator.isNumber(obj)).toBeFalsy();
-//     expect(validator.isNumber(func)).toBeFalsy();
-//     expect(validator.isNumber(bool)).toBeFalsy();
-//   });
+describe('validator module performs basic validation of', () => {
+  const validator = new ValidatorClass();
+  /// we need to check the data if it string then give the string argumint truth and the other varible is false
+  it(' allow strings', () => {
+    expect(validator.isString(str)).toBeTruthy();
+    expect(validator.isString(num)).toBeFalsy();
+    expect(validator.isString(arr)).toBeFalsy();
+    expect(validator.isString(obj)).toBeFalsy();
+    expect(validator.isString(func)).toBeFalsy();
+    expect(validator.isString(bool)).toBeFalsy();
+  });
+  /// we need to check the data if it number then give the number argumint truth and the other varible is false
+  it(' allow numbers', () => {
+    expect(validator.isNumber(str)).toBeFalsy();
+    expect(validator.isNumber(num)).toBeTruthy();
+    expect(validator.isNumber(arr)).toBeFalsy();
+    expect(validator.isNumber(obj)).toBeFalsy();
+    expect(validator.isNumber(func)).toBeFalsy();
+    expect(validator.isNumber(bool)).toBeFalsy();
+  });
 
-//   /// we need to check the data if it object then give the object argumint truth and the other varible is false
-//   it('allow objects', () => {
-//     expect(validator.isObject(str)).toBeFalsy();
-//     expect(validator.isObject(num)).toBeFalsy();
-//     expect(validator.isObject(arr)).toBeTruthy();
-//     expect(validator.isObject(obj)).toBeTruthy();
-//     expect(validator.isObject(func)).toBeFalsy();
-//     expect(validator.isObject(bool)).toBeFalsy();
-//   });
-//   /// we need to check the data if it object then give the object argumint truth and the other varible is false
-//   it('allow booleans', () => {
-//     expect(validator.isBoolean(str)).toBeFalsy();
-//     expect(validator.isBoolean(num)).toBeFalsy();
-//     expect(validator.isBoolean(arr)).toBeFalsy();
-//     expect(validator.isBoolean(obj)).toBeFalsy();
-//     expect(validator.isBoolean(func)).toBeFalsy();
-//     expect(validator.isBoolean(bool)).toBeTruthy();
-//   });
-//   /// we need to check the data if it function then give the function argumint truth and the other varible is false
-//   it('allow functions', () => {
-//     expect(validator.isFunction(str)).toBeFalsy();
-//     expect(validator.isFunction(num)).toBeFalsy();
-//     expect(validator.isFunction(arr)).toBeFalsy();
-//     expect(validator.isFunction(obj)).toBeFalsy();
-//     expect(validator.isFunction(func)).toBeTruthy();
-//     expect(validator.isFunction(bool)).toBeFalsy();
-//   });
-//   /// we need to check the data if it array then give the array argumint truth and the other varible is false
-//   it('allow arrays', () => {
-//     expect(validator.isArray(str)).toBeFalsy();
-//     expect(validator.isArray(num)).toBeFalsy();
-//     expect(validator.isArray(arr)).toBeTruthy();
-//     expect(validator.isArray(obj)).toBeFalsy();
-//     expect(validator.isArray(func)).toBeFalsy();
-//     expect(validator.isArray(bool)).toBeFalsy();
-//   });
-//   //// we need to put the arr type
+  /// we need to check the data if it object then give the object argumint truth and the other varible is false
+  it('allow objects', () => {
+    expect(validator.isObject(str)).toBeFalsy();
+    expect(validator.isObject(num)).toBeFalsy();
+    expect(validator.isObject(arr)).toBeTruthy();
+    expect(validator.isObject(obj)).toBeTruthy();
+    expect(validator.isObject(func)).toBeFalsy();
+    expect(validator.isObject(bool)).toBeFalsy();
+  });
+  /// we need to check the data if it object then give the object argumint truth and the other varible is false
+  it('allow booleans', () => {
+    expect(validator.isBoolean(str)).toBeFalsy();
+    expect(validator.isBoolean(num)).toBeFalsy();
+    expect(validator.isBoolean(arr)).toBeFalsy();
+    expect(validator.isBoolean(obj)).toBeFalsy();
+    expect(validator.isBoolean(func)).toBeFalsy();
+    expect(validator.isBoolean(bool)).toBeTruthy();
+  });
+  /// we need to check the data if it function then give the function argumint truth and the other varible is false
+  it('allow functions', () => {
+    expect(validator.isFunction(str)).toBeFalsy();
+    expect(validator.isFunction(num)).toBeFalsy();
+    expect(validator.isFunction(arr)).toBeFalsy();
+    expect(validator.isFunction(obj)).toBeFalsy();
+    expect(validator.isFunction(func)).toBeTruthy();
+    expect(validator.isFunction(bool)).toBeFalsy();
+  });
+  /// we need to check the data if it array then give the array argumint truth and the other varible is false
+  it('allow arrays', () => {
+    expect(validator.isArray(str)).toBeFalsy();
+    expect(validator.isArray(num)).toBeFalsy();
+    expect(validator.isArray(arr)).toBeTruthy();
+    expect(validator.isArray(obj)).toBeFalsy();
+    expect(validator.isArray(func)).toBeFalsy();
+    expect(validator.isArray(bool)).toBeFalsy();
+  });
+  //// we need to put the arr type
 //   it('arrays of type', () => {
 //     let numArray = [1, 2, 3];
 //     let strArray = ['a', 'b', 'c'];
@@ -99,7 +91,7 @@ const ValidatorClass = require('../../validator/lib/validator.js');
 //     expect(validator.isArray(func)).toBeFalsy();
 //     expect(validator.isArray(bool)).toBeFalsy();
 //   });
-// });
+});
 
 
 
